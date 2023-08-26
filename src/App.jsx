@@ -10,9 +10,43 @@ function App() {
 
   return (
     <>
-    {/* <Header /> */}
-    <Body />
-    <Footer />
+    <div className='container'>
+    <div className='row'>
+      <div className='col project'>
+        <p>Placeholder</p>
+      </div>
+      <div className='col project'>
+        <p>Placeholder</p>
+      </div>
+    </div>
+    </div>
+    <div className='container'>
+    <div className='row'>
+      <div className='col-3 project'>
+        <p>Placeholder</p>
+      </div>
+      <div className='col-6'>
+        <Body />
+      </div>
+      <div className='col-3 project'>
+        <p>Placeholder</p>
+      </div>
+    </div>
+    </div>
+    <div className='container'>
+    <div className='row'>
+      <div className='col project'>
+        <p>Placeholder</p>
+      </div>
+      <div className='col project'>
+        <Footer />
+      </div>
+      <div className='col project'>
+        <p>Placeholder</p>
+      </div>
+    </div>
+    </div>
+    
     </>
   );
 }

@@ -10,21 +10,24 @@ function Body() {
 
     const renderPage = () => {
         if (currentPage === 'Home') {
-          return <Home />;
+            return <Home />;
         }
         if (currentPage === 'About') {
-          return <About />;
+            return <About />;
         }
         return <Contact />;
-      };
-    
-      const handlePageChange = (page) => setCurrentPage(page);
-    
-    return(
-        <div>
-        <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-        <main className="mx-3">{renderPage()}</main>
+    };
+
+    const handlePageChange = (page) => setCurrentPage(page);
+
+    return (
+        <div className='container'>
+            <div className='row'>
+                <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+                <main className="mx-3">{renderPage()}</main>
+            </div>
         </div>
+
     );
 }
 
