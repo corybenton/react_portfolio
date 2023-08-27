@@ -24,7 +24,7 @@ function Body() {
         <div className='container'>
             <div className='row'>
                 <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-                <main className="mx-3">{renderPage()}</main>
+                <main>{renderPage()}</main>
             </div>
         </div>
 
