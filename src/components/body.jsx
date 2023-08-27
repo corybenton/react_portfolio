@@ -1,19 +1,19 @@
 //import Project from './project';
 import { useState } from 'react';
 import Navigation from './navigation';
-import Home from './pages/home';
+import Resume from './pages/resume';
 import About from './pages/about';
 import Contact from './pages/contact';
 
 function Body() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
-        }
         if (currentPage === 'About') {
             return <About />;
+        }
+        if (currentPage === 'Resume') {
+            return <Resume />;
         }
         return <Contact />;
     };
