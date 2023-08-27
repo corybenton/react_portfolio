@@ -55,12 +55,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #eb5e55;
+  background-color: #9cfffa;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #9cfffa;
+  border-color:#1e1a67
 }
 
 button:focus,
@@ -103,10 +103,33 @@ h3 {
   background-color: #9cfffa;
 }
 
+.thumb {
+  height: 50px;
+  margin: 50px 10px;
+}
+
 .me {
+  float: left;
+}
+
+input {
+  width: 95%;
+}
+
+textarea {
+  width: 95%;
   height: 200px;
 }
 
-.thumb {
-  height: 50px;
+.required {
+  color:#f1d302;
+}
+
+.form {
+  background-color:#eb5e55
+}
+
+.skills{
+  width: 40%;
+  margin-left: 25%;
 }
