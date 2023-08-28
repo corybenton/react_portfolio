@@ -2,13 +2,13 @@ function Footer(){
     return(
         <div>
             <a href='https://github.com/corybenton'>
-                <img className="thumb" src='../../src/assets/images/github.jpg'></img>
+                <img className="thumb" src='../../src/assets/github.jpg'></img>
             </a>
             <a href='https://www.linkedin.com/in/cory-benton-4b333a22a/'>
-                <img className="thumb" src='../../src/assets/images/linkedin.png'></img>
+                <img className="thumb" src='../../src/assets/linkedin.png'></img>
             </a>
             <a href='https://www.facebook.com/cory.benton.90/'>
-                <img className="thumb" src='../../src/assets/images/facebook.jpg'></img>
+                <img className="thumb" src='../../src/assets/facebook.jpg'></img>
             </a>
         </div>
     );

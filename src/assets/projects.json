@@ -1,36 +1,36 @@
 [
     {
-        "img": "../../src/assets/images/Roll_screenshot.png",
+        "img": "../../src/assets/Roll_screenshot.png",
         "title": "Roll Through the Ages",
         "deploy": "https://peaceful-everglades-28565-b6ba6371ed9c.herokuapp.com/",
         "github": "https://github.com/corybenton/roll_through_the_ages"
     },
     {
-        "img": "../../src/assets/images/Brewery_screenshot.png",
+        "img": "../../src/assets/Brewery_screenshot.png",
         "title": "Brewery Finder",
         "deploy": "https://elmiquea.github.io/Brewery-Finder/",
         "github": "https://github.com/corybenton/Brewery-Finder"
     },
     {
-        "img": "../../src/assets/images/Quiz_screenshot.png",
+        "img": "../../src/assets/Quiz_screenshot.png",
         "title": "Coding Quiz",
         "deploy": "https://corybenton.github.io/coding_quiz/",
         "github": "https://github.com/corybenton/coding_quiz"
     },
     {
-        "img": "../../src/assets/images/ecom_screenshot.png",
+        "img": "../../src/assets/ecom_screenshot.png",
         "title": "E-commerce backend",
         "deploy": "https://drive.google.com/file/d/1HAu4is5-P9S87YllPRIPr37Z9JK4I1SW/view",
         "github": "https://github.com/corybenton/ecom_backend"
     },
     {
-        "img": "../../src/assets/images/note_screenshot.png",
+        "img": "../../src/assets/note_screenshot.png",
         "title": "Note Taker",
         "deploy": "https://desolate-temple-59283.herokuapp.com/",
         "github": "https://github.com/corybenton/note_taker"
     },
     {
-        "img": "../../src/assets/images/weather_screenshot.png",
+        "img": "../../src/assets/weather_screenshot.png",
         "title": "Weather App",
         "deploy": "https://corybenton.github.io/weather_app/",
         "github": "https://github.com/corybenton/weather_app"
