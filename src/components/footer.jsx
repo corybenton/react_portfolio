@@ -8,7 +8,7 @@ function Footer(){
                 <img className="thumb" src='../../public/images/linkedin.png'></img>
             </a>
             <a href='https://www.facebook.com/cory.benton.90/'>
-                <img className="thumb" src='../../public/images/facebook.jpg'></img>
+                <img className="thumb" src='/images/facebook.jpg'></img>
             </a>
         </div>
     );
