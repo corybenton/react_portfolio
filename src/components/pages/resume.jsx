@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <div className="center">
             <h2>Resume</h2>
-            <p>Download my resume here.</p>
+            <p>Download my resume <a href="../../src/assets/corybentonresume.pdf" download>here.</a></p>
             <p>Skills include but are not limited to:</p>
             <ul className="skills">
                 <li>Javascript</li>

@@ -23,13 +23,13 @@ function App() {
     </div>
     <div className='container'>
     <div className='row'>
-      <div className='col-3 project'>
+      <div className='col-3 project middle'>
       <Project i='2' />
       </div>
       <div className='col-6'>
         <Body />
       </div>
-      <div className='col-3 project'>
+      <div className='col-3 project middle'>
       <Project i='3' />
       </div>
     </div>
