@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
-function ContactForm(props) {
+function ContactForm() {
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [msg, setMessage] = useState('');
     const [name, setName] = useState('');
     const [eError, setEmailError] = useState('');
     const [nError, setNameError] = useState('');
@@ -25,10 +25,19 @@ function ContactForm(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        Email.send({
+            SecureToken : "2fa2ee9d-959a-416c-952b-94a9e69216ff",
+            To : "corybenton@gmail.com",
+            From : "corybenton@gmail.com",
+            Subject : `${name} wants to talk to you`,
+            Body : `from: ${email} \n ${msg}`
+        }).then(
+          message => alert(message)
+        );
+        
         setEmail('');
-        setName('');
         setMessage('');
+        setName('');
     }
 
     const checkEmpty = (e) => {
@@ -49,6 +58,7 @@ function ContactForm(props) {
 
     return (
         <div className='container'>
+            <p>Email: corybenton@gmail.com</p>
             <form className='form' onSubmit={handleSubmit}>
                 <label htmlFor="Name">Name: </label>
                 <input
@@ -80,7 +90,7 @@ function ContactForm(props) {
                 )}
                 <label htmlFor="Message">Message: </label>
                 <textarea
-                    value={message}
+                    value={msg}
                     name="Message"
                     onChange={handleInputChange}
                     onBlur={checkEmpty}
@@ -92,7 +102,7 @@ function ContactForm(props) {
                         <p className='required'>{mError}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <button onSubmit={handleSubmit} type="submit">Submit</button>
             </form>
 
         </div>
