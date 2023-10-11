@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
     const [email, setEmail] = useState('');
@@ -25,15 +26,19 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Email.send({
-            SecureToken : "2fa2ee9d-959a-416c-952b-94a9e69216ff",
-            To : "corybenton@gmail.com",
-            From : "corybenton@gmail.com",
-            Subject : `${name} wants to talk to you`,
-            Body : `from: ${email} \n ${msg}`
-        }).then(
-          message => alert(message)
-        );
+
+        const templateParams = {
+            name: name,
+            email: email,
+            message: msg
+        };
+        
+        emailjs.send('default_service', 'template_54sq7g7', templateParams, 'YTEgbU2YLY8MAP70Y')
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+         }, (err) => {
+            console.log('FAILED...', err);
+         });
         
         setEmail('');
         setMessage('');
