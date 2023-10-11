@@ -94,7 +94,7 @@ function ContactForm() {
                     name="Message"
                     onChange={handleInputChange}
                     onBlur={checkEmpty}
-                    type='text'
+                    type='text' 
                     placeholder='Message'
                 />
                 {mError && (
@@ -102,7 +102,7 @@ function ContactForm() {
                         <p className='required'>{mError}</p>
                     </div>
                 )}
-                <button onSubmit={handleSubmit} type="submit">Submit</button>
+                <button onClick={handleSubmit} type="submit">Submit</button>
             </form>
 
         </div>
