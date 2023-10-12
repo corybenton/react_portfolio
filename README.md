@@ -26,6 +26,12 @@ Go to https://heroic-licorice-68bbce.netlify.app/
 
 It is a place to see some of my work, my resume and contact me.
 
+<img width="874" alt="Screenshot 2023-10-12 160334" src="https://github.com/corybenton/react_portfolio/assets/128768293/2051f908-52fb-4718-ac43-cf4b6d184dfa">
+
+<img width="873" alt="Screenshot 2023-10-12 160355" src="https://github.com/corybenton/react_portfolio/assets/128768293/ea2fac95-edcf-419c-af5f-8774e0ad1b3b">
+
+
+
 ## License
 
 This program is using the MIT license.
