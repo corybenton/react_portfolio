@@ -59,6 +59,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color:#1e1a67
 }
@@ -101,6 +102,7 @@ h3 {
 
 .img-thumbnail {
   background-color: #9cfffa;
+  height: 200px;
 }
 
 .thumb {
@@ -141,4 +143,47 @@ textarea {
 
 .paragraph {
   text-align: justify;
+}
+
+.west {
+  position: relative;
+  background-color: #9cfffa;
+  right: 65%;
+  bottom: 260px;
+  z-index: -1;
+}
+
+.west > p, .west > b {
+  margin-right: 35%;
+}
+
+.topp {
+  height: 175px;
+  color: black;
+}
+
+.east {
+  position: relative;
+  background-color: #9cfffa;
+  left: 65%;
+  bottom: 260px;
+  z-index: -1;
+}
+
+.east > p, .east > b {
+  margin-left: 35%;
+}
+
+.top {
+  height: 300px;
+}
+
+.left {
+  position: relative;
+  right: 50px;
+}
+
+.right {
+  position: relative;
+  left: 50px;
 }

@@ -4,6 +4,7 @@ function Navigation({ currentPage, handlePageChange }) {
     return (
         <div>
             <h1>Cory Benton</h1>
+            <h5>corybenton@gmail.com</h5>
             <nav>
                 <ul className="nav nav-nodes row">
                     <li className="nav-item col-4">
