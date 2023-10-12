@@ -63,7 +63,6 @@ function ContactForm() {
 
     return (
         <div className='container'>
-            <p>Email: corybenton@gmail.com</p>
             <form className='form' onSubmit={handleSubmit}>
                 <label htmlFor="Name">Name: </label>
                 <input
